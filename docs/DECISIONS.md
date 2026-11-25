@@ -28,6 +28,7 @@ Approved design and technical decisions. Newest last. Any change to an entry mus
 | D22 | 2026-11-21 | Saves | **3 save slots**, each individually deletable. Versioned JSON in `user://`. |
 | D23 | 2026-11-21 | Git | `main` + feature branches per deliverable; Conventional Commits; tags per stage. |
 | D24 | 2026-11-21 | License | Code **MIT**; assets all rights reserved; AI use disclosed in README. |
+| D25 | 2026-11-25 | Minions | Minions are small red-code flying insects ("glitch bugs") that **wander at random** inside the arena and deal **small contact damage**. Spawned by boss patterns and optional ambient waves, capped by `max_alive`, always telegraphed, despawned on phase change. They don't chase AVI. HONEYPOT lures them. Details in ARCHITECTURE.md. |
 
 ## Ability roster (D12)
 
