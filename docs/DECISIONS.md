@@ -29,6 +29,7 @@ Approved design and technical decisions. Newest last. Any change to an entry mus
 | D23 | 2026-11-21 | Git | `main` + feature branches per deliverable; Conventional Commits; tags per stage. |
 | D24 | 2026-11-21 | License | Code **MIT**; assets all rights reserved; AI use disclosed in README. |
 | D25 | 2026-11-25 | Minions | Minions are small red-code flying insects ("glitch bugs") that **wander at random** inside the arena and deal **small contact damage**. Spawned by boss patterns and optional ambient waves, capped by `max_alive`, always telegraphed, despawned on phase change. They don't chase AVI. HONEYPOT lures them. Details in ARCHITECTURE.md. |
+| D26 | 2026-11-26 | Crouch | `look_down` (S) **on the ground crouches**: lower hurtbox, AVI stops moving, attacks are still allowed. **Airborne** it does not crouch; it only affects aiming (scheme pending, see open questions). |
 
 ## Ability roster (D12)
 
@@ -53,6 +54,8 @@ Approved design and technical decisions. Newest last. Any change to an entry mus
 | Double jump | **DEBUG** | Insect wings | BUG |
 
 ## Open questions
+
+- Aiming scheme: 8-way with lock, free aim (mouse / right stick), or hybrid per attack range.
 
 - Platforms per arena (drop-through with S + jump)?
 - Reward for beating the 3-phase rematch, beyond counting toward BUG?

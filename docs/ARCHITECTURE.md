@@ -22,6 +22,24 @@ Technical design for AVI. Decisions referenced as `Dxx` live in [DECISIONS.md](D
 | `Settings` | Language, volumes, display, input remapping (persisted separately from saves) |
 | `DebugTools` | F1 hitboxes, F2 invincibility, F3 skip phase, tuning overlay (debug builds only) |
 
+## Input
+
+Default bindings live in `autoload/input_defaults.gd` (`InputDefaults`) and are applied by `Settings` at startup, so remapping (stage 13) only overrides this single table.
+
+| Action | Keyboard | Gamepad |
+|---|---|---|
+| `move_left` / `move_right` | A / D | Left stick, D-pad |
+| `look_up` / `look_down` | W / S | Left stick, D-pad |
+| `jump` | Space | A |
+| `dodge` | Shift | B |
+| `dash` | N | RT |
+| `attack_short` | K | X |
+| `attack_medium` | L | Y |
+| `attack_long` | I | RB |
+| `pause` | Esc | Start |
+
+Debug keys (F1–F4) are hard-coded in `DebugTools` and only exist in debug builds.
+
 ## Data (custom Resources)
 
 | Resource | Key fields |
@@ -129,6 +147,8 @@ DECRYPT "breaks shields and chains" (D12). A `Breakable` component (health + hur
 ## Localization
 
 All player-facing strings are keys (`UI_PLAY`, `DEFEAT_TROJAN_01`) in `localization/strings.csv` (columns `en`, `es`). Ability names stay identical across languages (D12).
+
+The player picks the language in-game (`Settings.set_locale`). On first launch it follows the OS language, falling back to English. The choice is saved in `user://settings.cfg`.
 
 ## Folder structure
 

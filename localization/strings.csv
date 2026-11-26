@@ -1,0 +1,9 @@
+keys,en,es
+UI_LANGUAGE,Language,Idioma
+UI_FULLSCREEN,Fullscreen,Pantalla completa
+SANDBOX_TITLE,AVI - Stage 0 sandbox,AVI - Sandbox de la etapa 0
+SANDBOX_GAMEPAD_CONNECTED,Gamepad: %s,Mando: %s
+SANDBOX_GAMEPAD_NONE,No gamepad detected,No se detectó ningún mando
+SANDBOX_ACTIONS,Active actions: %s,Acciones activas: %s
+SANDBOX_ACTIONS_NONE,none,ninguna
+SANDBOX_HINT,Press any game key or gamepad button to test the input map.,Pulsa cualquier tecla del juego o botón del mando para probar los controles.

@@ -11,13 +11,26 @@ config_version=5
 [application]
 
 config/name="AVI"
+run/main_scene="res://debug/sandbox/sandbox.tscn"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Events="*res://autoload/events.gd"
+Settings="*res://autoload/settings.gd"
+GameState="*res://autoload/game_state.gd"
+SaveManager="*res://autoload/save_manager.gd"
+AudioManager="*res://autoload/audio_manager.gd"
+SceneRouter="*res://autoload/scene_router.gd"
+DebugTools="*res://autoload/debug_tools.gd"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/window_width_override=1280
+window/size/window_height_override=720
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
@@ -30,3 +43,7 @@ window/stretch/aspect="expand"
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="forward_plus"
 viewport/hdr_2d=true
+
+[internationalization]
+
+locale/translations=PackedStringArray("res://localization/strings.en.translation", "res://localization/strings.es.translation")
